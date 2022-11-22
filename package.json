@@ -1,0 +1,43 @@
+{
+  "name": "devops-prj-01-tdd-bowling-kata",
+  "version": "1.0.0",
+  "description": "\"# devops-prj-01-tdd-bowling-kata\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "code:fix": " prettier --write . && eslint --fix .",
+    "commit": "cz",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuocAnDg/devops-prj-01-tdd-bowling-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuocAnDg/devops-prj-01-tdd-bowling-kata/issues"
+  },
+  "homepage": "https://github.com/QuocAnDg/devops-prj-01-tdd-bowling-kata#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.3.1",
+    "prettier": "2.7.1",
+    "supertest": "^6.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
