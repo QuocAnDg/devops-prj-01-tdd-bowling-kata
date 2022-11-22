@@ -1,1 +1,1 @@
-"# devops-prj-01-tdd-bowling-kata" 
+"# devops-prj-01-tdd-bowling-kata"
