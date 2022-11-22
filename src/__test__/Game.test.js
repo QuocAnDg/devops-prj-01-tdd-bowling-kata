@@ -9,4 +9,15 @@ describe("bowling game tests", () => {
     }
     expect(game.score).toBe(20);
   });
+  // test without spare and strike
+  it("should return 26", () => {
+    const game = new Game();
+    const MAX_ROLL = 20;
+    game.roll(3);
+    game.roll(5);
+    for (let i = 2; i < MAX_ROLL; i++) {
+      game.roll(1);
+    }
+    expect(game.score).toBe(26);
+  });
 });
