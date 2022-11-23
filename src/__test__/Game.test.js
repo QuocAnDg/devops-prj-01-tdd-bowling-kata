@@ -33,4 +33,15 @@ describe("bowling game tests", () => {
     }
     expect(game.score).toBe(36);
   });
+  it("should be for 20 for a game with 1 strike", () => {
+    const a = new Game();
+    const MAX_ROLL = 20;
+    a.roll(10);
+    a.roll(3);
+    a.roll(2);
+    for (let i = 3; i < MAX_ROLL; i++) {
+      a.roll(0);
+    }
+    expect(a.score).toBe(20);
+  });
 });
