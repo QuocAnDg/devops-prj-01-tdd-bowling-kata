@@ -55,8 +55,8 @@ describe("bowling game tests", () => {
     a.roll(2);
     expect(a.score).toBe(12);
   });
-  it('check last turn : if the player made a strike -> he has 2 rolls bonus', () => {
-    const a = new Game()
+  it("check last turn : if the player made a strike -> he has 2 rolls bonus", () => {
+    const a = new Game();
     const MAX_ROLL = 20;
     for (let i = 2; i < MAX_ROLL; i++) {
       a.roll(0);
