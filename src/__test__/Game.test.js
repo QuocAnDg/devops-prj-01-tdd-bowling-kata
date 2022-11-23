@@ -44,4 +44,15 @@ describe("bowling game tests", () => {
     }
     expect(a.score).toBe(20);
   });
+  it('checks last turn : if the player made a spare -> he has one roll bonus', () => {
+    const a = new Game();
+    const MAX_ROLL = 20;
+    for (let i = 2; i < MAX_ROLL; i++) {
+      a.roll(0);
+    }
+    a.roll(7);
+    a.roll(3);
+    a.roll(2);
+    expect(a.score).toBe(12);
+  });
 });
